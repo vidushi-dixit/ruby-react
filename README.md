@@ -1,24 +1,8 @@
 # README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+In Satellite:
+1. git checkout tags/<tag> -b <branch> (point to the version which your app is using)
+2. yarn build
+3. cd packages/<package-name> (eg. cd packages/satellite-auth)
+4. yarn link /
+Now, in your app eg. IBD, Providers etc(whichever is using satellite):
+5. yarn link @medlypharmacy/<library-name> (eg. yarn link @medlypharmacy/satellite-auth)
