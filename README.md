@@ -2,7 +2,7 @@
 ## How to run the app locally
 '''
 In Satellite:
-* git checkout tags/<tag> -b <branch> (point to the version which your app is using)
+* git checkout tags/< tag > -b <branch> (point to the version which your app is using)
 * yarn build
 * cd packages/<package-name> (eg. cd packages/satellite-auth)
 * yarn link
